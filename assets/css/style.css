@@ -183,12 +183,38 @@ i {
     color: white;
 }
 
-@media (max-width: 768px) {
+.img-desktop {
+    display: block;
+}
+.img-mobile,
+.img-tablet,
+.img-thumbnail {
+    display: none;
+}
+
+@media (max-width: 1024px) {
     .img-desktop {
+        display: none;
+    }
+    .img-tablet {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-tablet {
         display: none;
     }
     .img-mobile {
         display: block;
     }
+}
 
+@media (max-width: 480px) {
+    .img-mobile {
+        display: none;
+    }
+    .img-thumbnail {
+        display: block;
+    }
 }
