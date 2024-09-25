@@ -1,0 +1,8 @@
+@font-face {
+    font-family: redhat-italic;
+    src: url('../fonts/RedHatText-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: redhat;
+    src: url('../fonts/RedHatText-VariableFont_wght.ttf');
+}

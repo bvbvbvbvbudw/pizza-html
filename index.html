@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Dessert Menu</title>
+
+  <!-- Custom styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f7f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #8b4513;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    .menu {
+      width: 65%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .item {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .container-img {
+      height: 150px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .container-img img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      color: #ff4500;
+      font-size: 1.1rem;
+    }
+
+    button {
+      background-color: #ff4500;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff6347;
+    }
+
+    .cart {
+      width: 30%;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart h2 {
+      font-size: 1.5rem;
+      color: #8b4513;
+      border-bottom: 2px solid #ff4500;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .cart-item span {
+      font-size: 1rem;
+    }
+
+    .total {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .confirm-order {
+      display: block;
+      width: 100%;
+      background-color: #ff4500;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .confirm-order:hover {
+      background-color: #ff6347;
+    }
+
+    .carbon-neutral {
+      font-size: 0.9rem;
+      color: green;
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Desserts</h1>
+
+  <div class="wrapper">
+    <div class="menu">
+      <div class="item">
+        <div class="container-img">
+          <img src="assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries">
+        </div>
+        <small>Waffle</small>
+        <p class="title">Waffle with Berries</p>
+        <p class="price">$6.50</p>
+        <button><i></i>Add to Cart</button>
+      </div>
+
+      <!-- Repeat similar blocks for other menu items -->
+
+    </div>
+
+    <div class="cart">
+      <h2>Your Cart (7)</h2>
+      <div class="cart-item">
+        <span>Classic Tiramisu</span>
+        <span>$5.50</span>
+      </div>
+      <div class="cart-item">
+        <span>Vanilla Bean Crème Brûlée (x4)</span>
+        <span>$28.00</span>
+      </div>
+      <div class="cart-item">
+        <span>Vanilla Panna Cotta (x2)</span>
+        <span>$13.00</span>
+      </div>
+      <p class="total">Total: $46.50</p>
+      <p class="carbon-neutral">🌿 This is a carbon-neutral delivery</p>
+      <button class="confirm-order">Confirm Order</button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+</body>
+</html>
